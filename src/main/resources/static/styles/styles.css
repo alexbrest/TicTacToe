@@ -1,0 +1,65 @@
+#game{
+	background: url('/imgs/grid.png');
+	width: 450px;
+	height: 450px;
+	margin: 10% auto 0;
+}
+
+.cell{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+.cell:hover{
+	opacity: .4; 
+	cursor: pointer;
+}
+
+.nextx .cell:hover{
+	background: url('/imgs/xsign.png');	
+}
+
+.nexto .cell:hover{
+	background: url('/imgs/circle.png');
+}
+
+#game .cell.x{
+	background: url('/imgs/xsign.png');
+}
+
+#game .cell.o{
+	background: url('/imgs/circle.png');
+}
+
+.cell.x, .cell.o{
+	opacity: 1;
+	cursor: no-drop;
+}
+
+#lastgame{
+	font-size: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.hidden{
+	display: none;
+}
+
+.result_image{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+.result_image.x{
+	background: url('/imgs/xsign.png');	
+	background-size: cover;
+}
+
+.result_image.o{
+	background: url('/imgs/circle.png');
+	background-size: cover;
+}
